@@ -16,19 +16,19 @@ TicTac to is a board game played by two players.
 
 ## Game Design
 I have created a class **BoardGame** This class has several methods
-* display() - displays the board as a list of 9 cells
-* makeMove() - computer makes a ramdom move from the list of available cells on board
-* humanMove() - Promt player to select a cell and checks if its a valid move (cell within board range and not already picked)
-* humanBoardUpdate() - Updates the board with human picked cell
-* computerBoardUpdate() - calls the makeMove method to generate a random number within range and updates board.
-* isThereAWinner() - creates a list of winning moves. and checks board if the list exist return True otherwise false
+* **display()** - displays the board as a list of 9 cells
+* **makeMove()** - computer makes a ramdom move from the list of available cells on board
+* **humanMove()** - Promt player to select a cell and checks if its a valid move (cell within board range and not already picked)
+* **humanBoardUpdate()** - Updates the board with human picked cell
+* **computerBoardUpdate()** - calls the makeMove method to generate a random number within range and updates board.
+* i**sThereAWinner()** - creates a list of winning moves. and checks board if the list exist return True otherwise false
 
-I have also implemented a ``playGame()`` function outside the class
-* It creates an object (ticTacToe) of the class (BoardGame)
+I have also implemented a ``**playGame()**`` function outside the class
+* It creates an object (**ticTacToe**) of the class (**BoardGame**)
 * Simulates the process of playing the game, by alternating between human and computer
 
 ### How TicTocToe is Played
-Game starts by calling the playGame() function
+Game starts by calling the **playGame(**) function
 * The playGame instantiate the class, and displayed an empty board.
 * Then it prompts the human to make a play, by calling humanMove() method which checks if its a valid move 
 * If valid, updates the board accordinly. Otherwise display an Invalid message and prompt another respose 
@@ -51,6 +51,6 @@ print(humanMove(["X","O","X","O","X","O","X","O"]))
 
 ```
 this will promt the user to pick a cell value and will return and Invalid Error, because all cells are picked.
-* test cases could be entering a number not in the cell, or entering a negative number.
+* Other test cases could be entering a number not in the board, or entering a negative number.
 
 
