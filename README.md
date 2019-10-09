@@ -7,7 +7,7 @@ TicTac to is a board game played by two players.
 
 ## Assumptions that are made in this solution
 * [X] There is one board
-* [X] The board will always consist of 9 cells indexing (0 - 8)
+* [X] The board will always consist of 3x3 cells
 * [X] The game is played between a human player Vs computer player
 * [X] Human will be the first player
 * [X] cells can either be "empty", "X" or "O"
@@ -16,9 +16,9 @@ TicTac to is a board game played by two players.
 
 ## Game Design
 I have created a class **BoardGame** This class has several methods
-* **display()** - displays the board as a list of 9 cells
+* **display()** - displays the board as a list of 3x3 cells
 * **makeMove()** - computer makes a ramdom move from the list of available cells on board
-* **humanMove()** - Promt player to select a cell and checks if its a valid move (cell within board range and not already picked)
+* **humanMove()** - Promt player to select a cell by choosing from alphabets A - I representing each cell in the 3x3 board. It checks if it is a valid move (cell within board range and not already picked)
 * **humanBoardUpdate()** - Updates the board with human picked cell
 * **computerBoardUpdate()** - calls the makeMove method to generate a random number within range and updates board.
 * i**sThereAWinner()** - creates a list of winning moves. and checks board if the list exist return True otherwise false
